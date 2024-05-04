@@ -125,4 +125,19 @@ Bu komut, belirtilen dal üzerine geçiş yapar ve artık bu dalda çalışırs�
 Dalı değiştirirken varsa yerel değişikliklerinizin olduğuna dikkat edin. Eğer üzerinde çalıştığınız dosyalarda değişiklikler varsa, bu değişikliklerinizi taahhüt etmeniz veya geçici olarak saklamanız gerekebilir.
 Bu şekilde, var olan bir dal üzerine geçiş yapabilir ve bu dalda çalışmaya başlayabilirsiniz. Artık bu dalda yeni değişiklikler yapabilir ve taahhütler yapabilirsiniz.
 **********************************
+13- "git clone" komutunu kullanırken belirli bir spesifik branch'i sadece çekmek istiyorsak nasıl yapabiliriz?
+"git clone" komutu varsayılan olarak uzak depodaki tüm dalları alır. Ancak, belirli bir spesifik dala odaklanmak istiyorsanız, "--single-branch" parametresini kullanabilirsiniz. İşte adımlar:
 
+İlk olarak, projeyi klonlamak istediğiniz dizine gidin.
+Ardından, aşağıdaki komutu kullanarak projeyi belirli bir spesifik dal üzerinden klonlayın:
+git clone -b dal_adı --single-branch uzak_depo_adresi
+Burada:
+
+"-b" parametresi, klonlanacak dalı belirtir.
+"dal_adı", klonlamak istediğiniz spesifik dalın adıdır.
+"--single-branch" parametresi, sadece belirtilen dalı klonlamak için kullanılır.
+"uzak_depo_adresi", klonlamak istediğiniz uzak depo adresidir.
+Örneğin, "main" dalını klonlamak istediğinizde:
+git clone -b main --single-branch https://github.com/kullanıcı/adresi.git
+Bu komut, sadece "main" dalını klonlar ve diğer tüm dalları göz ardı eder. Bu, projenin tamamını klonlamak yerine sadece belirli bir dala odaklanmanızı sağlar.
+**********************************
