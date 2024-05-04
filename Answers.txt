@@ -171,3 +171,33 @@ Merge conflict'ler, paralel geliştirme süreçlerinde ortaya çıkabilen yaygı
 
 Özetle, "git log" komutu, Git deposundaki taahhütleri listeler ve her bir taahhüdün kimliği, yazarı, tarihi ve taahhüt mesajı gibi temel bilgilerini gösterir. Bu bilgiler, projenin geçmişini incelemek ve yapılan değişiklikleri anlamak için kullanışlıdır.
 **********************************
+16- "git diff" ile kaç farklı iki durumun arasındaki değişiklikleri görebiliriz?
+"git diff" komutu, Git deposundaki değişiklikleri görmek için kullanılır. Bu komut, iki farklı durum arasındaki farkları karşılaştırır ve bu farkları gösterir. İki durum arasındaki değişiklikleri görmek için "git diff" komutunu kullanırken, aşağıdaki durumlar mümkündür:
+
+1. **İki Farklı Taahhüt (Commit) Arasındaki Değişiklikler**: "git diff" komutunu bir taahhüt (commit) kimliği veya başka bir referans noktası ile birlikte kullanarak, iki farklı taahhüt arasındaki değişiklikleri görebilirsiniz. Örneğin:
+git diff taahhüt1 taahhüt2
+Bu komut, "taahhüt1" ve "taahhüt2" arasındaki değişiklikleri gösterir.
+
+2. **İki Farklı Dal Arasındaki Değişiklikler**: "git diff" komutunu iki dal adı veya başka bir referans noktası ile birlikte kullanarak, iki farklı dal arasındaki değişiklikleri görebilirsiniz. Örneğin:
+git diff dal1 dal2
+Bu komut, "dal1" ve "dal2" arasındaki değişiklikleri gösterir.
+
+3. **İki Farklı Ağaç Durumu (Tree) Arasındaki Değişiklikler**: "git diff" komutunu iki ağaç durumu (tree) veya dosya yolları ile birlikte kullanarak, iki farklı ağaç durumu arasındaki değişiklikleri görebilirsiniz. Örneğin:
+git diff ağaç_durumu1 ağaç_durumu2
+Bu komut, "ağaç_durumu1" ve "ağaç_durumu2" arasındaki değişiklikleri gösterir.
+
+Genel olarak, "git diff" komutu, iki farklı durum arasındaki değişiklikleri görmek için kullanılır ve bu durumlar taahhütler, dallar veya ağaç durumları olabilir. Bu komut, projedeki değişiklikleri anlamak ve kontrol etmek için çok kullanışlıdır.
+**********************************
+17- Git reset ile neyi geri alıyoruz?
+"git reset" komutu, Git deposundaki son taahhütleri (commit'leri) geri almak veya değiştirmek için kullanılır. Bu komut, belirli bir taahhüdü referans alarak, işlem gören dala (genellikle "HEAD" olarak adlandırılır) veya bir taahhüt üzerine yeniden konumlandırma yapar.
+
+"git reset" komutu farklı modlarıyla kullanılabilir:
+
+1. **--soft**: Bu modda, "git reset --soft" komutu son taahhütü geri alır, ancak dosyaların değişiklikleri yerinde korunur. Bu, dosyaları veya indeksi değiştirmeyerek sadece son taahhüte geri dönmenizi sağlar.
+
+2. **--mixed** (Varsayılan): Bu modda, "git reset --mixed" komutu son taahhüdü geri alır ve dosyaların değişiklikleri de iptal edilir. Yani, dosyaların içeriği değiştirilmeden indekse geri dönersiniz.
+
+3. **--hard**: Bu modda, "git reset --hard" komutu son taahhüdü geri alır ve hem dosyaların hem de indeksin değişiklikleri iptal edilir. Bu, son taahhüdün tamamen geri alınması ve tüm değişikliklerin silinmesi anlamına gelir.
+
+Genel olarak, "git reset" komutu, Git deposunda yapılan son taahhütleri geri almak veya değiştirmek için kullanılır. Bu komut, taahhütlerin yeniden konumlandırılmasına ve projenin geçmişinin düzenlenmesine olanak tanır. Ancak, "git reset --hard" gibi dikkatlice kullanılmalıdır çünkü geri alınamayan değişikliklere neden olabilir.
+**********************************
