@@ -156,3 +156,18 @@ Birleştirme çakışması oluştuğunda, Git değişikliklerin hangi satırlard
 
 Merge conflict'ler, paralel geliştirme süreçlerinde ortaya çıkabilen yaygın bir durumdur. İyi bir çözüm, takım üyelerinin sık sık birleştirme işlemlerini gerçekleştirmesi ve değişiklikleri sık sık ana dala entegre etmeleridir. Bu, birleştirme çakışmalarını minimize etmeye ve çözümlerini kolaylaştırmaya yardımcı olabilir.
 **********************************
+15- "git log" komutu ile hangi bilgileri görebiliriz?
+"git log" komutu, Git deposundaki taahhütleri (commit'leri) listeler ve her bir taahhüdün belirli bilgilerini gösterir. Bu komut, projenin geçmişini ve yapılan değişiklikleri görmek için kullanılır. İşte "git log" komutu ile görebileceğiniz başlıca bilgiler:
+
+1. **Commit Kimliği (SHA-1)**: Her taahhüdün benzersiz bir kimliği vardır. Bu kimlik, taahhüdü tekil olarak tanımlar.
+
+2. **Yazar Bilgisi**: Taahhüdü yapan kişinin adı ve e-posta adresi.
+
+3. **Tarih ve Saat**: Taahhüdün yapıldığı tarih ve saat bilgisi.
+
+4. **Taahhüt Mesajı**: Taahhütü açıklayan metin. Bu mesaj, yapılan değişiklikleri ve nedenlerini açıklar.
+
+"git log" komutu, bu bilgileri varsayılan olarak gösterir. Ancak, birçok seçenek ve parametre kullanarak çıktıyı özelleştirebilirsiniz. Örneğin, "--oneline" parametresi tek satırlık bir çıktı gösterirken, "--stat" parametresi her taahhüdün değişiklik istatistiklerini gösterir.
+
+Özetle, "git log" komutu, Git deposundaki taahhütleri listeler ve her bir taahhüdün kimliği, yazarı, tarihi ve taahhüt mesajı gibi temel bilgilerini gösterir. Bu bilgiler, projenin geçmişini incelemek ve yapılan değişiklikleri anlamak için kullanışlıdır.
+**********************************
