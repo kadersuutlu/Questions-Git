@@ -305,3 +305,18 @@ Bu sadece birkaç örnek olup, GitHub'da milyonlarca kullanıcı bulunmaktadır 
 
 Özetle, ana dal (main veya master), Git deposunun varsayılan ve genellikle ana geliştirme hattını temsil eden daldır. Diğer dallar ise belirli özelliklerin, hata düzeltmelerinin veya iyileştirmelerin geliştirilmesi için kullanılır ve genellikle ana daldan çatallanır.
 **********************************
+25- ".gitignore" dosyası nedir ve ne amaçla kullanılır?
+".gitignore" dosyası, bir Git deposunda izlenmeyen dosyaları belirtmek için kullanılan bir dosyadır. Bu dosya, Git'e hangi dosyaların veya klasörlerin takip edilmemesi gerektiğini söyler. Bu, genellikle geçici dosyalar, derleme çıktıları, kullanıcı özel ayar dosyaları gibi gereksiz veya hassas dosyaları ve dizinleri listeleyerek yapılır.
+
+".gitignore" dosyası, depo kök dizinine yerleştirilir ve Git tarafından otomatik olarak dikkate alınır. Dosya adı tam olarak ".gitignore" olarak belirtilmelidir. Bu dosyada her bir satır, izlenmeyen dosya veya dizinlerin bir desenini belirtir. Desenler, dosya adları veya genişletilmiş desenler olabilir. Örneğin, "*.log" deseni tüm .log uzantılı dosyaları dışlar.
+
+".gitignore" dosyasının temel amaçları şunlardır:
+
+1. **Geçici Dosyaları ve Derleme Çıktılarını Yoksayma**: Derleme süreci veya geçici dosyalar oluşturulduğunda, bu dosyaların ve dizinlerin depoya eklenmemesi için kullanılır.
+
+2. **Kullanıcı Özel Ayar Dosyalarını Dışlama**: Kullanıcı özel ayar dosyaları (örneğin, IDE veya metin düzenleyici ayar dosyaları), diğer geliştiricilerle paylaşılmaması gereken hassas bilgiler içerebilir. Bu dosyaların depoya eklenmesini engellemek için kullanılır.
+
+3. **Bağımlılıkları Dışlama**: Proje bağımlılıkları veya üçüncü taraf kütüphaneleri, projenin kod tabanına dahil edilmemeli ve depoya eklenmemelidir. Bu dosyaların depoya eklenmemesi için ".gitignore" kullanılır.
+
+Bu dosya, proje kod tabanının temiz ve düzenli kalmasına yardımcı olur ve gereksiz dosyaların veya dizinlerin depoya eklenmesini önler. Bu da projenin boyutunu küçültür ve projeyle ilgili olmayan dosyaların veya dizinlerin proje paylaşıldığında diğer kullanıcılarla paylaşılmamasını sağlar.
+**********************************
