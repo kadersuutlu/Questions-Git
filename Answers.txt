@@ -242,4 +242,21 @@ Depolar, genellikle aşağıdaki özelliklere sahiptir:
 
 Depolar, proje yönetiminde ve işbirliğinde önemli bir rol oynar. Geliştiriciler, depolar aracılığıyla proje dosyalarını paylaşabilir, işbirliği yapabilir, değişiklikleri takip edebilir ve proje tarihçesini yönetebilirler.
 **********************************
+21- "git tag" nedir? "git branch"’ten farkı nedir?
+"git tag" ve "git branch" komutları, Git'in farklı özelliklerini ve işlevlerini gerçekleştiren iki farklı komuttur.
+
+1. **git tag**:
+   - "git tag" komutu, belirli bir taahhütü (commit) işaretlemek veya etiketlemek için kullanılır. 
+   - Etiketleme işlemi, genellikle bir sürümün veya belirli bir noktanın (örneğin, bir beta sürümünün veya yayınlanmış bir sürümün) işaretlenmesi için kullanılır.
+   - Etiketler, genellikle sabit ve değiştirilemez bir referans olarak kullanılır ve belirli bir taahhüdü temsil eder.
+   - Etiketler, projenin geçmişinde belirli bir noktayı işaretleyerek, o noktadaki sürüm veya durumu tanımlamak için kullanışlıdır.
+
+2. **git branch**:
+   - "git branch" komutu, Git deposunda mevcut olan dalları listelemek, yeni dallar oluşturmak, dallar arasında geçiş yapmak veya bir dalı silmek gibi dallarla ilgili işlemleri gerçekleştirmek için kullanılır.
+   - Dallar, farklı geliştirme süreçlerini veya özellikleri izlemek için kullanılır.
+   - Dallar, birbirinden bağımsız olarak geliştirme yapmak ve değişiklikleri izole etmek için kullanışlıdır.
+   - "git branch" komutu, mevcut dalları listelerken, "git branch yeni_dal_adı" komutu bir yeni dal oluşturur ve "git branch -d dal_adı" komutu ise bir dalı siler.
+
+Özetle, "git tag" komutu belirli bir taahhüdü işaretlemek için kullanılırken, "git branch" komutu dallarla ilgili işlemleri gerçekleştirmek için kullanılır. Etiketler, belirli bir sürümü veya işareti temsil ederken, dallar ise farklı geliştirme süreçlerini ve izole edilmiş değişiklikleri temsil eder.
+**********************************
 
