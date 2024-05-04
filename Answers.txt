@@ -94,4 +94,21 @@ Hata Düzeltme: Ana daldaki bir hata üzerinde çalışırken, hızlıca bir hat
 İzolasyon ve Güvenlik: Dallar, değişikliklerinizi izole ederek ana daldaki diğer geliştirme çalışmalarından etkilenmeden çalışmanızı sağlar. Ayrıca, bir dalda yapılan değişiklikler diğer daları etkilemez, bu da güvenli bir geliştirme ortamı sağlar.
 Bu nedenlerle, "branch" yapısı, geliştirme sürecini organize etmek, paralel geliştirme yapmak ve değişiklikleri yönetmek için güçlü bir araçtır.
 **********************************
+11- Sıfırdan bir "branch" nasıl oluşturabiliriz?
+Git'te sıfırdan bir dal (branch) oluşturmak oldukça basittir. İşte adımlar:
 
+İlk olarak, projenizin kök dizinine gidin. Bu, Git deposunun bulunduğu dizindir.
+Ardından, yeni bir dal oluşturmak için aşağıdaki komutu kullanın:
+git branch yeni_dal_adı
+Örneğin, bir "feature" dalı oluşturmak istiyorsanız:
+git branch feature
+Bu komut, "yeni_dal_adı" olarak adlandırılan bir dal oluşturur, ancak bu dal üzerine geçiş yapmaz. Yani, şu anda hala mevcut dalda (genellikle "master" veya "main" olarak adlandırılır) kalırsınız.
+
+Oluşturduğunuz yeni dalda çalışmaya başlamak için, oluşturduğunuz dala geçiş yapmanız gerekmektedir. Geçiş yapmak için aşağıdaki komutu kullanın:
+git checkout yeni_dal_adı
+Örneğin:
+git checkout feature
+Bu komut, yeni oluşturduğunuz dala geçiş yapar ve artık bu dalda çalışırsınız.
+
+Artık "feature" adında bir dal oluşturmuş oldunuz ve bu dal üzerinde çalışmaya başlayabilirsiniz. Bu dalı oluşturduktan ve üzerine geçiş yaptıktan sonra, değişikliklerinizi bu dala ekleyebilir ve bu dala taahhütler yapabilirsiniz.
+**********************************
