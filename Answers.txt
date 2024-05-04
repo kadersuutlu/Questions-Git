@@ -1,3 +1,9 @@
 1- Git nedir?
 Git, yazılım geliştirme sürecinde kullanılan bir versiyon kontrol sistemi olarak tanımlanabilir. Bu sistem, bir proje üzerinde yapılan değişikliklerin izlenmesine, yönetilmesine ve işbirliği yapılmasına olanak sağlar. Geliştiriciler, Git'i kullanarak kodları depolayabilir, değişiklikleri takip edebilir, farklı versiyonlar arasında geçiş yapabilir ve ekip üyeleriyle birlikte çalışabilirler. Git, dağıtık bir yapıya sahiptir, yani her kullanıcı kendi kopyasını alır ve bağımsız olarak çalışabilir, daha sonra değişiklikleri birleştirebilir. Bu, paralel geliştirme yapmayı kolaylaştırır ve projelerin daha düzenli bir şekilde yönetilmesine olanak tanır.
 **********************************
+1- "git pull" ile "git fetch" komutlarının farkı nedir?
+"git pull" ve "git fetch" komutları, uzak bir Git deposundan değişiklikleri yerel depoya almanın iki farklı yolunu temsil eder.
+
+git fetch: Bu komut, uzak depodaki değişiklikleri yerel depoya getirir, ancak bu değişiklikleri yerel çalışma dizinine birleştirmez. Yani, uzaktaki güncellemeleri yerel depoya indirir, ancak yerel dosyaları etkilemez. Bu, yerel deponun güncel olup olmadığını kontrol etmenizi sağlar ve güncelleme işlemini istediğiniz zaman gerçekleştirebilirsiniz.
+git pull: Bu komut, aslında iki işlemi birleştirir: "git fetch" ve "git merge" veya "git rebase". Yani, önce uzaktaki değişiklikleri yerel depoya getirir (git fetch gibi), ardından yerel çalışma dizinindeki değişikliklerle birleştirir veya yeniden temel alır. Böylece, "git pull" komutunu kullandığınızda, hem uzak değişiklikler indirilir hem de yerel çalışma dizininde birleştirme işlemi otomatik olarak gerçekleştirilir. Bu, tek bir adımda uzak değişiklikleri alıp, yerel çalışma dizinindeki kodunuzu güncellemenize olanak tanır.
+**********************************
