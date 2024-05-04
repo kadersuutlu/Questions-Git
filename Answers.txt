@@ -294,3 +294,14 @@ GitHub'daki bazı popüler kullanıcı adlarına örnek olarak:
 
 Bu sadece birkaç örnek olup, GitHub'da milyonlarca kullanıcı bulunmaktadır ve her birinin benzersiz kullanıcı adları vardır.
 **********************************
+24- main ya da master branch'inin diğer branchlerden farkı nedir?
+"main" veya "master" adı verilen ana dal (branch), Git deposunun varsayılan dalıdır ve genellikle tüm geliştirme işlemleri bu dal üzerinde yapılır. Diğer dallar ise genellikle ana daldan çatallanır ve belirli özelliklerin geliştirilmesi veya belirli işlevlerin eklenmesi için kullanılır. Ana dal ile diğer dallar arasındaki farklar şunlardır:
+
+1. **Varsayılan Dal Olarak Kullanılması**: Ana dal (main veya master), Git deposunun varsayılan dalıdır. Yeni bir depo oluşturulduğunda veya herhangi bir dal belirtilmediğinde, varsayılan olarak "main" veya "master" dalı oluşturulur. Diğer dallar, belirli özelliklerin veya işlevlerin geliştirilmesi için oluşturulur ve ana daldan çatallanır.
+
+2. **Ana Dal Olarak Genel Kabul Edilmesi**: "main" veya "master" dalı, projenin ana geliştirme hattını temsil eder ve genellikle tüm geliştirme çalışmaları bu dal üzerinde gerçekleşir. Bu dal, proje üzerindeki resmi ve istikrarlı sürümlerin oluşturulduğu yerdir.
+
+3. **Geliştirme ve İyileştirme İşlemleri**: Ana dal genellikle canlı üretim ortamında çalışan kodu temsil eder. Diğer dallar ise genellikle yeni özelliklerin geliştirilmesi, hata düzeltmelerinin yapılması veya diğer iyileştirme işlemleri için kullanılır. Bu dallar, geliştirme sürecinin izole edilmesini ve ana daldaki canlı kodu etkilememesini sağlar.
+
+Özetle, ana dal (main veya master), Git deposunun varsayılan ve genellikle ana geliştirme hattını temsil eden daldır. Diğer dallar ise belirli özelliklerin, hata düzeltmelerinin veya iyileştirmelerin geliştirilmesi için kullanılır ve genellikle ana daldan çatallanır.
+**********************************
