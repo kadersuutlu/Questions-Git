@@ -201,3 +201,12 @@ Genel olarak, "git diff" komutu, iki farklı durum arasındaki değişiklikleri 
 
 Genel olarak, "git reset" komutu, Git deposunda yapılan son taahhütleri geri almak veya değiştirmek için kullanılır. Bu komut, taahhütlerin yeniden konumlandırılmasına ve projenin geçmişinin düzenlenmesine olanak tanır. Ancak, "git reset --hard" gibi dikkatlice kullanılmalıdır çünkü geri alınamayan değişikliklere neden olabilir.
 **********************************
+18- "git commit" ile "git push" arasındaki fark nedir?
+"git commit" ve "git push" komutları, Git'in temel işlevlerinden ikisidir, ancak farklı amaçlar için kullanılırlar:
+
+1. **git commit**: Bu komut, çalışma dizinindeki değişiklikleri bir taahhüte (commit) dönüştürmek için kullanılır. Yani, bir taahhüt oluşturarak, dosyalarda yapılan değişiklikleri yerel depoya kaydetmiş olursunuz. Bu, projedeki ilerlemeyi izlemek, değişikliklerin geçmişini korumak ve geri dönüşler yapmak için önemlidir. Ancak, bu taahhütler henüz uzak depoya gönderilmez.
+
+2. **git push**: Bu komut, yerel depodaki taahhütleri uzak bir depoya veya uzak bir depodaki belirli bir dala göndermek için kullanılır. Yani, "git push" komutu, yerel depodaki taahhütleri uzak depoya yükler ve böylece değişiklikleri paylaşır. Uzak depoya gönderilen taahhütler, diğer geliştiricilerin bu değişiklikleri görmesine ve almasına olanak tanır.
+
+Özetle, "git commit" komutu, yerel depoya değişiklikleri kaydetmek için kullanılırken, "git push" komutu, yerel depodaki taahhütleri uzak bir depoya göndermek için kullanılır ve böylece değişikliklerin paylaşılmasını sağlar.
+**********************************
