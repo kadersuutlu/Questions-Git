@@ -7,3 +7,9 @@ Git, yazılım geliştirme sürecinde kullanılan bir versiyon kontrol sistemi o
 git fetch: Bu komut, uzak depodaki değişiklikleri yerel depoya getirir, ancak bu değişiklikleri yerel çalışma dizinine birleştirmez. Yani, uzaktaki güncellemeleri yerel depoya indirir, ancak yerel dosyaları etkilemez. Bu, yerel deponun güncel olup olmadığını kontrol etmenizi sağlar ve güncelleme işlemini istediğiniz zaman gerçekleştirebilirsiniz.
 git pull: Bu komut, aslında iki işlemi birleştirir: "git fetch" ve "git merge" veya "git rebase". Yani, önce uzaktaki değişiklikleri yerel depoya getirir (git fetch gibi), ardından yerel çalışma dizinindeki değişikliklerle birleştirir veya yeniden temel alır. Böylece, "git pull" komutunu kullandığınızda, hem uzak değişiklikler indirilir hem de yerel çalışma dizininde birleştirme işlemi otomatik olarak gerçekleştirilir. Bu, tek bir adımda uzak değişiklikleri alıp, yerel çalışma dizinindeki kodunuzu güncellemenize olanak tanır.
 **********************************
+3- Eğer takım arkadaşımız "kodlarımı gönderdim, benim geliştirmemin üzerine devam et" derse ve gönderdiği kodları "git pull" ile lokalimize alamıyorsak nerelerde hata yapılmış olabilir?
+Uzak depo bağlantısı eksik veya hatalı: İlk olarak, uzak depoya erişimde bir sorun olabilir. Örneğin, doğru uzak depo URL'si belirtilmemiş olabilir veya erişim izinleri hatalı olabilir.
+Uzak depo güncel değil: Takım arkadaşınızın kodlarını gönderdiği depo güncel değilse, "git pull" komutu çalışmaz çünkü uzak depoda alınacak bir şey yoktur.
+Kodlar gönderilmedi veya yanlış depoya gönderildi: Takım arkadaşınızın kodları hiç gönderilmediyse veya yanlış bir depoya gönderildiyse, "git pull" komutu işe yaramaz çünkü uzak depoda alınacak bir değişiklik yoktur.
+Bağlantı sorunları: İnternet bağlantısında veya ağ erişiminde genel bir sorun olabilir, bu da uzak depodan veri almanızı engelleyebilir.
+**********************************
