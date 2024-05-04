@@ -141,3 +141,18 @@ Burada:
 git clone -b main --single-branch https://github.com/kullanıcı/adresi.git
 Bu komut, sadece "main" dalını klonlar ve diğer tüm dalları göz ardı eder. Bu, projenin tamamını klonlamak yerine sadece belirli bir dala odaklanmanızı sağlar.
 **********************************
+14- "Merge conflict" ne demektir?
+"Merge conflict" (birleştirme çakışması), Git'in farklı dalları birleştirirken karşılaştığı bir durumdur. Bu durum, Git'in iki veya daha fazla daldaki değişiklikleri birleştirirken uyumsuzlık tespit ettiği anlamına gelir.
+
+Birleştirme çakışması genellikle şu durumlarda ortaya çıkar:
+
+1. **Aynı Satırlarda Farklı Değişiklikler**: İki farklı daldaki aynı satıra yapılan farklı değişiklikler nedeniyle birleştirme çakışması oluşabilir. Git, hangi değişikliğin kabul edileceğini otomatik olarak belirleyemez ve kullanıcıdan yardım ister.
+
+2. **Farklı Dosyalarda Aynı İsimli Dosyaların Değiştirilmesi**: İki farklı dalda, aynı ada sahip ancak farklı içeriklere sahip dosyaların değiştirilmesi durumunda da birleştirme çakışması oluşabilir.
+
+3. **Silinen Dosyaların Değiştirilmesi**: Bir dalda silinen bir dosyanın, diğer bir daldaki aynı dosyanın değiştirilmesi durumunda birleştirme çakışması oluşabilir.
+
+Birleştirme çakışması oluştuğunda, Git değişikliklerin hangi satırlarda çakıştığını belirtir. Kullanıcılar daha sonra çakışmayı çözmek için değişiklikleri elle düzeltebilir ve ardından birleştirme işlemini tamamlayabilirler.
+
+Merge conflict'ler, paralel geliştirme süreçlerinde ortaya çıkabilen yaygın bir durumdur. İyi bir çözüm, takım üyelerinin sık sık birleştirme işlemlerini gerçekleştirmesi ve değişiklikleri sık sık ana dala entegre etmeleridir. Bu, birleştirme çakışmalarını minimize etmeye ve çözümlerini kolaylaştırmaya yardımcı olabilir.
+**********************************
