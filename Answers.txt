@@ -52,3 +52,14 @@ Staged: Değişiklikler Staging Area'ya eklenmiş, ancak henüz taahhüt edilmem
 Untracked: Bu dosyalar, depoya henüz eklenmemiş veya izlenmeye başlanmamış dosyalardır. Yani, Git bu dosyaları tanımaz ve değişiklikleri takip etmez.
 "Untracked file" durumu genellikle yeni oluşturulan dosyalar veya depoya eklenmemiş dosyalar için geçerlidir. Bu dosyalar, genellikle projeye yeni eklenen veya geçici dosyalardır. Git, bu dosyaları otomatik olarak izlemez veya takip etmez, bu nedenle kullanıcılar bu dosyaları açıkça eklemelidir. Bu, "git add" komutu ile yapılabilir. Bu şekilde, dosyalar Staging Area'ya eklenir ve bir sonraki taahhütte dahil edilirler.
 **********************************
+8- ".git" klasörünü silersek ne olur?
+".git" klasörü, Git deposunun tüm tarihçesini, dallarını, taahhütlerini ve yapılandırma bilgilerini içeren önemli bir klasördür. Bu klasörün silinmesi ciddi sonuçlara yol açar ve Git deposunun işlevselliğini büyük ölçüde etkiler.
+
+Eğer ".git" klasörünü silerseniz:
+
+Tarihçe ve Taahhütler Kaybolur: ".git" klasörü, Git deposunun tüm geçmişini barındırır. Bu klasör silindiğinde, tüm taahhüt geçmişi kaybolur ve geçmişte yapılan değişiklikler geri getirilemez.
+Dallar Kaybolur: Git deposundaki dallar ve bu dallara yapılan tüm değişiklikler de silinir. Bu, projenin mevcut durumunu ve farklı geliştirme dallarını tamamen kaybedeceğiniz anlamına gelir.
+Yapılandırma Bilgileri Kaybolur: ".git" klasörü, Git deposunun yapılandırma bilgilerini içerir. Bu, özel ayarlar, uzak depo bağlantıları ve diğer yapılandırma ayarlarını içerir. ".git" klasörünün silinmesiyle, bu yapılandırma bilgileri de kaybolur.
+Depo Geri Dönüşsüz Olarak Hasar Görür: ".git" klasörünü silmek, depoya geri dönüşsüz zarar verir. Bu nedenle, bu klasörün silinmesi, Git deposunun tamamen kullanılamaz hale gelmesine neden olur.
+Bu nedenle, ".git" klasörünü silmek, Git deposunun işlevselliğini kaybetmenize ve projenin tüm geçmişini ve yapılandırma bilgilerini kaybetmenize neden olur. Bu, ciddi bir sorun oluşturur ve kesinlikle kaçınılması gereken bir durumdur.
+**********************************
