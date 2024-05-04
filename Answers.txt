@@ -1,7 +1,7 @@
 1- Git nedir?
 Git, yazılım geliştirme sürecinde kullanılan bir versiyon kontrol sistemi olarak tanımlanabilir. Bu sistem, bir proje üzerinde yapılan değişikliklerin izlenmesine, yönetilmesine ve işbirliği yapılmasına olanak sağlar. Geliştiriciler, Git'i kullanarak kodları depolayabilir, değişiklikleri takip edebilir, farklı versiyonlar arasında geçiş yapabilir ve ekip üyeleriyle birlikte çalışabilirler. Git, dağıtık bir yapıya sahiptir, yani her kullanıcı kendi kopyasını alır ve bağımsız olarak çalışabilir, daha sonra değişiklikleri birleştirebilir. Bu, paralel geliştirme yapmayı kolaylaştırır ve projelerin daha düzenli bir şekilde yönetilmesine olanak tanır.
 **********************************
-1- "git pull" ile "git fetch" komutlarının farkı nedir?
+2- "git pull" ile "git fetch" komutlarının farkı nedir?
 "git pull" ve "git fetch" komutları, uzak bir Git deposundan değişiklikleri yerel depoya almanın iki farklı yolunu temsil eder.
 
 git fetch: Bu komut, uzak depodaki değişiklikleri yerel depoya getirir, ancak bu değişiklikleri yerel çalışma dizinine birleştirmez. Yani, uzaktaki güncellemeleri yerel depoya indirir, ancak yerel dosyaları etkilemez. Bu, yerel deponun güncel olup olmadığını kontrol etmenizi sağlar ve güncelleme işlemini istediğiniz zaman gerçekleştirebilirsiniz.
@@ -12,4 +12,11 @@ Uzak depo bağlantısı eksik veya hatalı: İlk olarak, uzak depoya erişimde b
 Uzak depo güncel değil: Takım arkadaşınızın kodlarını gönderdiği depo güncel değilse, "git pull" komutu çalışmaz çünkü uzak depoda alınacak bir şey yoktur.
 Kodlar gönderilmedi veya yanlış depoya gönderildi: Takım arkadaşınızın kodları hiç gönderilmediyse veya yanlış bir depoya gönderildiyse, "git pull" komutu işe yaramaz çünkü uzak depoda alınacak bir değişiklik yoktur.
 Bağlantı sorunları: İnternet bağlantısında veya ağ erişiminde genel bir sorun olabilir, bu da uzak depodan veri almanızı engelleyebilir.
+**********************************
+4- "git fetch origin" komutundaki "origin" neye karşılık gelmektedir?
+"origin", bir Git depo bağlantısının adıdır. Genellikle, yerel depoya bağlı bir veya birden fazla uzak depo olduğunda, her uzak depo bağlantısına bir ad verilir. Bu ad, uzak depoyu tanımlamak için kullanılır ve genellikle varsayılan olarak "origin" olarak adlandırılır.
+
+"origin" adı, bir uzak depo bağlantısını belirtir ve bu bağlantı genellikle depoyu barındıran hizmetin adını temsil eder. Örneğin, GitHub'da barındırılan bir projede, "origin" adı genellikle GitHub reposunu temsil eder. Ancak, "origin" adı her zaman GitHub olmak zorunda değildir; projenin barındırıldığı başka bir hizmetin adı da olabilir.
+
+Yani, "git fetch origin" komutu, yerel depoya bağlı olan "origin" adlı uzak depodan değişiklikleri getirir. Bu komut, yerel depoya bağlı olan uzak depolar arasında belirtilen "origin" adlı uzak depoyu hedef alır ve bu depodan güncellemeleri alır.
 **********************************
