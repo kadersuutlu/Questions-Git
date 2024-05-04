@@ -259,4 +259,19 @@ Depolar, proje yönetiminde ve işbirliğinde önemli bir rol oynar. Geliştiric
 
 Özetle, "git tag" komutu belirli bir taahhüdü işaretlemek için kullanılırken, "git branch" komutu dallarla ilgili işlemleri gerçekleştirmek için kullanılır. Etiketler, belirli bir sürümü veya işareti temsil ederken, dallar ise farklı geliştirme süreçlerini ve izole edilmiş değişiklikleri temsil eder.
 **********************************
+22- Git'i görsel olarak kullanabilmek için hangi üçüncü taraf araçları ve uygulamaları kullanabiliriz?
+Git'i görsel olarak kullanmak için bir dizi üçüncü taraf araç ve uygulama mevcuttur. İşte bazı popüler seçenekler:
+
+1. **GitHub Desktop**: GitHub tarafından geliştirilen ücretsiz bir masaüstü uygulamasıdır. GitHub hesabınızla entegre olur ve Git deposunu yönetmek için kullanışlı bir arayüz sunar. Taahhütleri gözden geçirebilir, değişiklikleri inceleyebilir, yeni dallar oluşturabilir ve daha fazlasını yapabilirsiniz.
+
+2. **GitKraken**: GitKraken, kullanıcı dostu bir arayüzle Git deposunu yönetmek için popüler bir masaüstü uygulamasıdır. Grafiksel bir kullanıcı arayüzü sunar ve taahhütleri görsel olarak inceleme, değişiklikleri sürükle-bırak yöntemiyle yönetme, farklı dallar arasında geçiş yapma ve daha fazlasını yapma imkanı sunar.
+
+3. **SourceTree**: SourceTree, Atlassian tarafından geliştirilen bir Git ve Mercurial masaüstü istemcisidir. Basit ve kullanıcı dostu bir arayüz sunar. Taahhütleri görsel olarak gözden geçirme, değişiklikleri karşılaştırma, dallar arasında geçiş yapma, dal birleştirme gibi özellikleri destekler.
+
+4. **GitLab**: GitLab, Git tabanlı kod barındırma ve yönetim platformudur. Web tabanlı kullanıcı arayüzü, depo oluşturma, taahhütleri yönetme, dal oluşturma ve birleştirme gibi işlevleri kolayca gerçekleştirmenize olanak tanır.
+
+5. **Bitbucket**: Atlassian tarafından sunulan bir kod barındırma ve işbirliği platformudur. Bitbucket, Git veya Mercurial tabanlı depoları barındırır ve web tabanlı bir kullanıcı arayüzü aracılığıyla taahhütleri yönetme, dal oluşturma ve birleştirme gibi işlemleri yapmanıza olanak tanır.
+
+Bu araçlar, Git'i daha görsel ve kullanıcı dostu bir şekilde yönetmenizi sağlar. Hangi aracın sizin için en uygun olduğunu belirlemek için birkaçını deneyebilir ve ihtiyaçlarınıza en uygun olanı seçebilirsiniz.
+**********************************
 
