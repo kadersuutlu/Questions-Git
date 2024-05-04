@@ -112,3 +112,17 @@ Bu komut, yeni oluşturduğunuz dala geçiş yapar ve artık bu dalda çalışı
 
 Artık "feature" adında bir dal oluşturmuş oldunuz ve bu dal üzerinde çalışmaya başlayabilirsiniz. Bu dalı oluşturduktan ve üzerine geçiş yaptıktan sonra, değişikliklerinizi bu dala ekleyebilir ve bu dala taahhütler yapabilirsiniz.
 **********************************
+12- Var olan bir "branch"e nasıl geçebiliriz?
+Var olan bir dal (branch) üzerine geçiş yapmak için "git checkout" komutunu kullanabilirsiniz. İşte adımlar:
+
+İlk olarak, projenizin kök dizinine gidin. Bu, Git deposunun bulunduğu dizindir.
+Var olan bir dal üzerine geçmek istediğinizde, aşağıdaki komutu kullanın:
+git checkout var_olan_dal_adı
+Örneğin, "feature" adında bir dala geçmek istiyorsanız:
+git checkout feature
+Bu komut, belirtilen dal üzerine geçiş yapar ve artık bu dalda çalışırsınız.
+
+Dalı değiştirirken varsa yerel değişikliklerinizin olduğuna dikkat edin. Eğer üzerinde çalıştığınız dosyalarda değişiklikler varsa, bu değişikliklerinizi taahhüt etmeniz veya geçici olarak saklamanız gerekebilir.
+Bu şekilde, var olan bir dal üzerine geçiş yapabilir ve bu dalda çalışmaya başlayabilirsiniz. Artık bu dalda yeni değişiklikler yapabilir ve taahhütler yapabilirsiniz.
+**********************************
+
