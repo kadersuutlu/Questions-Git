@@ -210,3 +210,18 @@ Genel olarak, "git reset" komutu, Git deposunda yapılan son taahhütleri geri a
 
 Özetle, "git commit" komutu, yerel depoya değişiklikleri kaydetmek için kullanılırken, "git push" komutu, yerel depodaki taahhütleri uzak bir depoya göndermek için kullanılır ve böylece değişikliklerin paylaşılmasını sağlar.
 **********************************
+19- Atomic commit ne demektir?
+"Atomic commit" terimi, bir taahhüt (commit) işlemi sırasında, ilgili değişikliklerin birlikte taahhüt edilmesi anlamına gelir. Bu, bir taahhütte birden fazla değişikliğin yapıldığı durumda, tüm değişikliklerin bir arada ve bağlantılı olarak taahhüt edilmesini ifade eder.
+
+"Atomic commit" yaklaşımı, değişikliklerin bir araya toplanmasını ve taahhüt edilmesini sağlayarak projenin tutarlılığını ve bütünlüğünü korur. Her bir taahhüt, tek bir konsept veya görevi temsil etmeli ve birbirinden bağımsız olmalıdır. Böylece, bir taahhüt geri alındığında veya değiştirildiğinde, diğer değişiklikler etkilenmez ve projenin bütünlüğü korunur.
+
+"Atomic commit" yaklaşımının bazı avantajları şunlardır:
+
+1. **Geri Almayı Kolaylaştırır**: Her bir taahhüt, tek bir konsepti temsil ettiği için, geri alma işlemleri daha kolaydır. Bir taahhüt geri alındığında, sadece o taahhütle ilişkili değişiklikler etkilenir.
+
+2. **Proje Tutarlılığını Sağlar**: Her bir taahhüt, projenin tutarlılığını ve bütünlüğünü korur. Bağımsız ve birbirinden bağımsız değişiklikler, bir arada taahhüt edilir.
+
+3. **İzleme ve Yönetmeyi Kolaylaştırır**: Tek bir konsepti temsil eden küçük ve öz taahhütler, değişiklikleri izlemeyi ve yönetmeyi kolaylaştırır. Hangi taahhütün hangi değişiklikleri getirdiğini belirlemek daha basittir.
+
+Özetle, "atomic commit" yaklaşımı, her bir taahhütün tek bir konsepti temsil ettiği ve birlikte taahhüt edilen değişikliklerin bir arada ve bağlantılı olduğu bir yaklaşımı ifade eder. Bu, projenin bütünlüğünü ve yönetimini sağlar.
+**********************************
