@@ -320,3 +320,18 @@ Bu sadece birkaç örnek olup, GitHub'da milyonlarca kullanıcı bulunmaktadır 
 
 Bu dosya, proje kod tabanının temiz ve düzenli kalmasına yardımcı olur ve gereksiz dosyaların veya dizinlerin depoya eklenmesini önler. Bu da projenin boyutunu küçültür ve projeyle ilgili olmayan dosyaların veya dizinlerin proje paylaşıldığında diğer kullanıcılarla paylaşılmamasını sağlar.
 **********************************
+26- "git push origin --delete branch_name” nedir ve ne için kullanılır?
+"git push origin --delete branch_name" komutu, uzak bir Git depo üzerinde belirtilen bir dalı silmek için kullanılır. Bu komut, "origin" olarak adlandırılan uzak depoya git ve "branch_name" olarak belirtilen daldan çıkartmak için "--delete" seçeneğiyle birlikte kullanılır.
+
+İşte komutun parçalarının açıklamaları:
+
+- **git push**: Yerel Git depodaki taahhütleri uzak bir depoya göndermek için kullanılan temel "git push" komutudur.
+
+- **origin**: Bu, uzak depoya bir isim verir. "origin", genellikle projenin orijinal kaynağına (örneğin, GitHub veya GitLab gibi) atıfta bulunur. Bu komut, uzak depoya gitmek için kullanılır.
+
+- **--delete**: Bu seçenek, belirtilen dalı uzak depodan silmek için kullanılır. "--delete" seçeneği, belirtilen dalın silinmesini istediğinizi belirtir.
+
+- **branch_name**: Bu, silmek istediğiniz dalın adıdır. Belirtilen isimdeki dal, uzak depodan silinecektir.
+
+Bu komut, bir projede artık kullanılmayan veya gereksiz hale gelen bir dalı uzak depodan kaldırmak için kullanılır. Örneğin, bir özellik tamamlandığında veya bir hata düzeltildiğinde ilgili dalın artık gerekli olmadığı ve uzak depodan silinebileceği durumlarda kullanılabilir. Bu işlem, projenin temizliğini ve düzenini sağlamak için önemlidir ve gereksiz dalların depoda birikmesini önler.
+**********************************
