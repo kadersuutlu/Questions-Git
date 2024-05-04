@@ -63,3 +63,22 @@ Yapılandırma Bilgileri Kaybolur: ".git" klasörü, Git deposunun yapılandırm
 Depo Geri Dönüşsüz Olarak Hasar Görür: ".git" klasörünü silmek, depoya geri dönüşsüz zarar verir. Bu nedenle, bu klasörün silinmesi, Git deposunun tamamen kullanılamaz hale gelmesine neden olur.
 Bu nedenle, ".git" klasörünü silmek, Git deposunun işlevselliğini kaybetmenize ve projenin tüm geçmişini ve yapılandırma bilgilerini kaybetmenize neden olur. Bu, ciddi bir sorun oluşturur ve kesinlikle kaçınılması gereken bir durumdur.
 **********************************
+9- Kendi lokalimizde her "git init" komutunu kullanıdığımızda otomatik olarak "ReadMe.md" dosyası oluşturulmasını istiyorsak ne yapmalıyız?
+Kendi lokalimizde her "git init" komutunu kullandığımızda otomatik olarak "README.md" dosyasının oluşturulmasını istiyorsak, birkaç adımla bunu sağlayabiliriz:
+
+İlk olarak, bir "README.md" dosyası oluşturun ve içeriğini hazırlayın. Bu dosya, proje hakkında genel bilgi ve talimatlar içerebilir.
+Ardından, bu dosyayı herhangi bir yeni proje dizininde varsayılan olarak oluşturmak için Git'in şablon dosyalarını yapılandıracağız.
+Komut satırını kullanarak, Git'in kullanacağı şablon dizinine gitmek için aşağıdaki komutu çalıştırın:
+cd /usr/share/git-core/templates
+Windows'ta bu konum biraz farklı olabilir, bu yüzden uygun konuma gidin.
+
+"templates" dizini altında bir "init" dizini oluşturun:
+mkdir init
+"init" dizini altına girin:
+cd init
+Burada, "README.md" dosyasını oluşturun ve içeriğini kopyalayın:
+touch README.md   veya   echo "# My Project" >> README.md
+Bu, "README.md" dosyasını oluşturur ve içine "# My Project" başlığını ekler. Başlığı kendi projenizin adıyla değiştirebilirsiniz.
+
+Artık herhangi bir yeni proje oluşturduğunuzda, "git init" komutunu kullandığınızda, otomatik olarak bir "README.md" dosyası oluşturulacak ve içeriği "My Project" başlığıyla dolu olacaktır. Bu dosya, projenizle ilgili temel bilgileri sağlamak için kullanılabilir.
+**********************************
