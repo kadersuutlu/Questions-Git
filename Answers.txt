@@ -20,3 +20,12 @@ Bağlantı sorunları: İnternet bağlantısında veya ağ erişiminde genel bir
 
 Yani, "git fetch origin" komutu, yerel depoya bağlı olan "origin" adlı uzak depodan değişiklikleri getirir. Bu komut, yerel depoya bağlı olan uzak depolar arasında belirtilen "origin" adlı uzak depoyu hedef alır ve bu depodan güncellemeleri alır.
 **********************************
+5- "HEAD" kelimesi neyi temsil etmektedir?
+"HEAD", Git deposundaki mevcut işlem gören dalı veya bağlı olan son taahhütü (commit) temsil eder. Yani, "HEAD", şu anda çalışılan dalı veya projenin en son durumunu gösterir.
+
+Git'te "HEAD" kavramı, iki farklı bağlamda kullanılır:
+
+Branch İsimleri ile: Eğer mevcut olarak hangi dalda olduğunuzu görmek istiyorsanız, "HEAD" o dalın son taahhüdünü temsil eder. Örneğin, eğer "master" dalındaysanız, "HEAD" "master" dalının en son taahhüdünü gösterir.
+Commit İdentifikatörleri ile: Eğer belirli bir taahhüd (commit) üzerinde çalışıyorsanız, "HEAD" o commit'i temsil eder. Bu durumda, "HEAD" belirli bir commit'in SHA-1 kimlik numarasını gösterir.
+Genel olarak, "HEAD" terimi, mevcut işlem gören dalı veya taahhüdü temsil etmek için kullanılır ve Git deposunun mevcut durumunu belirtir.
+**********************************
