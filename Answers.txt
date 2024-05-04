@@ -225,3 +225,21 @@ Genel olarak, "git reset" komutu, Git deposunda yapılan son taahhütleri geri a
 
 Özetle, "atomic commit" yaklaşımı, her bir taahhütün tek bir konsepti temsil ettiği ve birlikte taahhüt edilen değişikliklerin bir arada ve bağlantılı olduğu bir yaklaşımı ifade eder. Bu, projenin bütünlüğünü ve yönetimini sağlar.
 **********************************
+20- Repository ne demektir?
+"Repository" (Depo), bir bilgisayar programlama terimi olup, genellikle bir proje veya yazılım geliştirme sürecinde kullanılan bir kavramdır. Bir depo, proje dosyalarının ve tarihçesinin saklandığı bir yer veya bir veritabanıdır.
+
+Özellikle yazılım geliştirme bağlamında, bir "repository" genellikle bir sürüm kontrol sistemi kullanılarak yönetilen bir yerdir. Örneğin, Git gibi sürüm kontrol sistemleri, bir projenin tüm dosyalarını ve proje tarihçesini saklamak için bir depo oluşturur. Bu depo, proje dosyalarının geçmişini (taahhütleri veya sürümleri), farklı geliştirme dallarını ve iş takibini içerir.
+
+Depolar, genellikle aşağıdaki özelliklere sahiptir:
+
+1. **Dosyaların Saklanması**: Depo, projeye ait tüm dosyaların saklandığı yerdir. Bu dosyalar, kod dosyaları, belgeler, resimler, yapılandırma dosyaları ve diğer tüm projeye ait dosyaları içerebilir.
+
+2. **Taahhüt Tarihçesi**: Depo, projede yapılan değişikliklerin tarihçesini saklar. Her bir taahhüt, projede yapılan belirli bir değişikliği temsil eder ve bu değişikliklerin ne zaman, kim tarafından ve neden yapıldığını gösterir.
+
+3. **Geliştirme Dalları**: Depo, proje üzerinde aynı anda birden fazla geliştirme dalının yönetilmesini sağlar. Bu dallar, farklı özelliklerin veya değişikliklerin geliştirilmesi için kullanılabilir.
+
+4. **İş Takibi**: Depo, projede yapılması gereken işlerin izlenmesini sağlar. Bu, açık sorunlar, yeni özellikler, hata düzeltmeleri ve diğer görevlerin takibini içerir.
+
+Depolar, proje yönetiminde ve işbirliğinde önemli bir rol oynar. Geliştiriciler, depolar aracılığıyla proje dosyalarını paylaşabilir, işbirliği yapabilir, değişiklikleri takip edebilir ve proje tarihçesini yönetebilirler.
+**********************************
+
