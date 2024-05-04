@@ -82,3 +82,16 @@ Bu, "README.md" dosyasını oluşturur ve içine "# My Project" başlığını e
 
 Artık herhangi bir yeni proje oluşturduğunuzda, "git init" komutunu kullandığınızda, otomatik olarak bir "README.md" dosyası oluşturulacak ve içeriği "My Project" başlığıyla dolu olacaktır. Bu dosya, projenizle ilgili temel bilgileri sağlamak için kullanılabilir.
 **********************************
+10- Git konusunda bahsi geçen "branch" yapısı nedir? Bize ne sağlar?
+Git'te "branch", projenin farklı geliştirme yolaklarını temsil eden ve aynı anda farklı değişiklikler üzerinde çalışılmasını sağlayan bir yapıdır. Bir "branch" (dal), projenin mevcut durumunu (genellikle "master" veya "main" olarak adlandırılan ana dal) kopyalar ve üzerinde bağımsız olarak çalışmayı mümkün kılar. Her bir dal, projenin farklı bir yönünü temsil eder ve projenin gelişimini izlemek ve yönetmek için kullanılır.
+
+"Branch" yapısı, birçok fayda sağlar:
+
+Paralel Geliştirme: Farklı geliştiriciler veya aynı geliştirici farklı özellikler üzerinde aynı anda çalışabilir. Her bir geliştirici kendi dalında değişiklikler yapabilir ve bu değişiklikleri ana dala entegre etmeden önce test edebilir.
+Deneysel Geliştirme: Yeni özellikler veya değişiklikler üzerinde çalışırken, deneysel dallar oluşturabilir ve bu dallarda değişiklikleri test edebilirsiniz. Ana dala entegre etmeden önce deneysel dalları kullanarak değişiklikleri deneyebilirsiniz.
+Sürüm Yönetimi: Farklı sürümleri veya sürüm adaylarını temsil etmek için dallar oluşturabilirsiniz. Her bir dal, bir sürüm veya sürüm adayını temsil edebilir ve sürüm yönetimini daha organize bir şekilde yönetmenize olanak tanır.
+Hata Düzeltme: Ana daldaki bir hata üzerinde çalışırken, hızlıca bir hata düzeltme dalı oluşturabilir ve bu dalda hata düzeltmeleri yapabilirsiniz. Bu, ana daki hata üzerinde çalışmayı etkilemeden hızlıca hata düzeltmeleri yapmanıza olanak tanır.
+İzolasyon ve Güvenlik: Dallar, değişikliklerinizi izole ederek ana daldaki diğer geliştirme çalışmalarından etkilenmeden çalışmanızı sağlar. Ayrıca, bir dalda yapılan değişiklikler diğer daları etkilemez, bu da güvenli bir geliştirme ortamı sağlar.
+Bu nedenlerle, "branch" yapısı, geliştirme sürecini organize etmek, paralel geliştirme yapmak ve değişiklikleri yönetmek için güçlü bir araçtır.
+**********************************
+
