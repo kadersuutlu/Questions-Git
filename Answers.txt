@@ -335,3 +335,6 @@ Bu dosya, proje kod tabanının temiz ve düzenli kalmasına yardımcı olur ve 
 
 Bu komut, bir projede artık kullanılmayan veya gereksiz hale gelen bir dalı uzak depodan kaldırmak için kullanılır. Örneğin, bir özellik tamamlandığında veya bir hata düzeltildiğinde ilgili dalın artık gerekli olmadığı ve uzak depodan silinebileceği durumlarda kullanılabilir. Bu işlem, projenin temizliğini ve düzenini sağlamak için önemlidir ve gereksiz dalların depoda birikmesini önler.
 **********************************
+For a more detailed guide on Git and GitHub, check out my article on Medium: [Git vs GitHub](https://sutlukader.medium.com/git-vs-github-07641bb0e3c4).
+
+Happy coding! 🚀
